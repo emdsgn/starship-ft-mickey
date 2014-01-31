@@ -15,7 +15,6 @@ body {
 
 header {  /*This fixes the nav at the top, and determines the nav color*/
   display: inline-block;
-  background-color: #272d50;
   width: 100%;
   top: 0;
   left: 0;
@@ -23,34 +22,39 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
 }
 
 .header { /*This adds padding to the header*/
-  padding-right: 0.8em;
+  padding: 0;
+  padding-top: 1em;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*=================STRICTLY NAV=================*/
 
 .nav {
-  background-color: #00ACCF;
-  font-size: 1rem;
-  margin: 0 -10px;
+  margin: 0 auto;
   overflow: hidden;
   padding: 0;
+  width: 80%;
 }
 
 .nav > ul {
   margin: 0;
   overflow: hidden;
   padding: 0.8rem 0;
-
   list-style-type: none;
 }
 
 .nav-btn {
   display: inline-block;
-  float: right;
   text-decoration: none;
   color: #000;
   background-color: #FFFFFF;
   padding: 10px;
+  margin: 0;
+  width: 89.5%;
+  text-align: center;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1.2em;
 }
 
 .nav a,
@@ -59,8 +63,9 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
 .nav a:hover,
 .nav a:focus,
 .nav a:active {
-  padding: 17px;
+  padding: 10px;
   text-transform: uppercase;
+  padding-bottom: 40px;
 }
 
 .nav ul {
@@ -140,4 +145,103 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
 
 .skiplinks a:focus {
   top: 0;
+}
+
+.name {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  margin-top: 80px;
+}
+
+h1 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 4.5em;
+  text-align: center;
+  line-height: 0em;
+  margin-bottom: 33px;
+}
+
+h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 0.25em;
+}
+
+h3 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #FFFFFF;
+  background-color: #0f102e;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.events {
+  background-color: #0f102e;
+  padding: 1em;
+}
+footer {
+  background-color: #0f102e;
+  padding: 1em;
+}
+
+.foot-head {
+  text-align: center;
+  font-family: 'Sanchez', sans-serif;
+  font-size: 1em;
+  color: #c1cf00;
+}
+
+.foot-body {
+  font-size: 0.7em;
+  font-weight: lighter;
+  color: #FFF;
+  padding: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.copyright {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Sanchez', sans-serif;
+  font-size: 0.5em;
+  letter-spacing: 0.2em;
+  text-align: center;
+  padding: 1em 0 0 0;
+}
+
+@media only screen and (min-width: 30em) {
+  .nav-btn {
+    display: none;
+  }
+
+  .nav[data-state="closed"],
+  .nav li {
+    max-height: 14rem;
+    display: inline-block;
+    float: right;
+  }
+
+  .nav li {
+    width: 100px;
+    text-align: center;
+  }
+
+  .nav {
+    margin: 15px;
+  }
+
+  .header {
+    display: inline-block;
+  }
 }
